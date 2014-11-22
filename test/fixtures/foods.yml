@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  food_type: MyString
+  string: MyString
+  name: MyString
+  expiration: 2014-11-17
+
+two:
+  food_type: MyString
+  string: MyString
+  name: MyString
+  expiration: 2014-11-17
