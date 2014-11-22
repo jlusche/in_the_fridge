@@ -1,0 +1,15 @@
+<h1>Create a new food for your fridge. </h1>
+
+<%= form_for @food do |f|%>
+  <%=f.label :name %> 
+  <%= f.text_field :name %>
+
+  <%=f.label :food_type%> 
+  <%= f.select :food_type, [['Fat', 'fat'], ['Drink', 'drink'],['Sugar', 'sugar'], ['Umami', 'Umami']] %>
+     <!-- 1st thing is what the user sees, the second is the value that gets sent into params -->
+  
+  <%=f.label :expiration %> 
+  <%= f.date_field :expiration %>
+
+  <%= f.submit 'Create Food' %>
+<%end%>

@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
 
   root 'foods#index'
+  resources :foods
+  #get '/foods' => 'foods#index'
+  #post '/foods' => 'foods#create'
+
+  #get '/foods/new' => 'foods#new'
+
+  #get '/foods/show' => 'foods#show'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

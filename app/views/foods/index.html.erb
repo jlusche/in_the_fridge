@@ -1,9 +1,11 @@
-<h1> Hi food </h1>
+<h1> ::Welcome to your fridge:: </h1>
+
+<a href="/foods/new"> Create a new food </a>
 
 <% @foods.each do |food| %>
 
 <ul>
-<li><%= food.name %></li>
+<li> <a href= "/foods/show" > <%= food.name %> </a> </li>
 </ul>
 
 <%end%>
